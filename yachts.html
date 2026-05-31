@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacht Club "Black Sea" - Флот яхт та бронювання</title>
+    <meta name="description" content="Ознайомтеся з каталогом наших розкішних яхт. Порівняйте технічні характеристики та залиште заявку на бронювання прямо зараз.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #05070c !important;
+            border-bottom: 1px solid #1e293b;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover, .nav-item.active .nav-link {
+            color: #00d2ff !important;
+            transition: color 0.3s ease;
+        }
+        .table-custom {
+            background-color: #0f172a;
+            color: #ffffff;
+            border: 1px solid #1e293b;
+        }
+        .table-custom th {
+            background-color: #05070c;
+            color: #00d2ff;
+            border-bottom: 2px solid #1e293b !important;
+        }
+        .table-custom td {
+            border-top: 1px solid #1e293b;
+        }
+        .form-section {
+            background-color: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        .form-control {
+            background-color: #0b0f19;
+            border: 1px solid #1e293b;
+            color: #ffffff;
+        }
+        .form-control:focus {
+            background-color: #0f172a;
+            border-color: #00d2ff;
+            color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 210, 255, 0.25);
+        }
+        .btn-custom {
+            background-color: #00d2ff;
+            color: #05070c;
+            font-weight: bold;
+            border: none;
+            width: 100%;
+        }
+        .btn-custom:hover {
+            background-color: #00b4db;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .footer {
+            background-color: #05070c;
+            border-top: 1px solid #1e293b;
+            padding: 20px 0;
+            margin-top: auto;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="index.html">Yacht Club</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Про club</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="yachts.html">Яхти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="mb-5 font-weight-bold text-center">Наш флот та характеристики</h1>
+        
+        <div class="table-responsive mb-5">
+            <table class="table table-custom table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Назва яхти</th>
+                        <th scope="col">Довжина (м)</th>
+                        <th scope="col">Місткість (осіб)</th>
+                        <th scope="col">Потужність двигуна</th>
+                        <th scope="col">Клас судна</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Sea Breeze</th>
+                        <td>14.5</td>
+                        <td>8</td>
+                        <td>450 к.с.</td>
+                        <td>Круїзна</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ocean Star</th>
+                        <td>22.1</td>
+                        <td>12</td>
+                        <td>900 к.с.</td>
+                        <td>Преміум максі</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Blue Wave</th>
+                        <td>35.0</td>
+                        <td>20</td>
+                        <td>1500 к.с.</td>
+                        <td>Мега-яхта</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-section">
+                    <h2 class="h4 mb-4 font-weight-bold text-center" style="color:#00d2ff;">Залишити заявку на тест-драйв або оренду</h2>
+                    <form action="https://formspree.io/f/moqbyldz" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Ваше ім'я</label>
+                                <input type="text" name="name" class="form-control" id="inputName" placeholder="Артем" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Електронна пошта</label>
+                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="example@domain.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectYacht">Оберіть модель яхти</label>
+                            <select id="selectYacht" name="yacht_model" class="form-control">
+                                <option selected>Sea Breeze</option>
+                                <option>Ocean Star</option>
+                                <option>Blue Wave</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMessage">Додаткові побажання</label>
+                            <textarea class="form-control" id="inputMessage" name="message" rows="4" placeholder="Напишіть ваші побажання щодо дати оренди або комплектації..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom p-3">Надіслати запит</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Yacht Club "Black Sea". Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

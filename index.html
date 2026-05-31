@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=index">
+    <title>Yacht Club "Black Sea" - Головна</title>
+    <meta name="description" content="Ласкаво просимо до елітного яхт-клубу Black Sea. Преміальний відпочинок, сучасний флот яхт та незабутні морські подорожі.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #05070c !important;
+            border-bottom: 1px solid #1e293b;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover, .nav-item.active .nav-link {
+            color: #00d2ff !important;
+            transition: color 0.3s ease;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.9)), url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+            padding: 150px 0;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #00d2ff;
+            color: #05070c;
+            font-weight: bold;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 4px;
+        }
+        .btn-custom:hover {
+            background-color: #00b4db;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .card-custom {
+            background-color: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .card-custom .card-title {
+            color: #00d2ff;
+        }
+        .footer {
+            background-color: #05070c;
+            border-top: 1px solid #1e293b;
+            padding: 20px 0;
+            margin-top: auto;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="index.html">Yacht Club</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Про клуб</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yachts.html">Яхти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold mb-4">Свобода на воді</h1>
+            <p class="lead mb-5 text-light">Відкрийте для себе незабутній досвід морських подорожей разом із надійним флотом та професіоналами своєї справи.</p>
+            <a href="yachts.html" class="btn btn-custom btn-lg">Обрати яхту</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-5 font-weight-bold">Популярні яхти</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-custom">
+                    <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Яхта Sea Breeze">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Sea Breeze</h3>
+                        <p class="card-text text-muted">Ідеальне поєднання швидкості, маневреності та комфорту для денних круїзів.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-custom">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fyachtrus.ru%2Farfa-fad-dea3%2Fuploads%2F2015%2F01%2F%25D1%258F%25D1%2585%25D1%2582%25D0%25B0-%25D0%2590%25D0%25B7%25D0%25B0%25D0%25BC.jpg&f=1&nofb=1&ipt=5fdfe48699193434783755f23d468d3988a0aea2f86b582cb056a7ddb796feea" alt="Яхта Ocean Star">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Ocean Star</h3>
+                        <p class="card-text text-muted">Розкішне судно преміум-класу для тривалих та автономних морських подорожей.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card card-custom">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fapi.arconyachts.com%2Fstorage%2F35806%2Fconversions%2FtnxggnRiBukeYtYbVBLYmmV5QP7eTTZhEv1A3crP-optimize.webp&f=1&nofb=1&ipt=63b4d8be67677527dbd68a710d22a1eef5c055b65c40323cac62c01c56e9d353" alt="Яхта Blue Wave">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Blue Wave</h3>
+                        <p class="card-text text-muted">Сучасна мега-яхта з ексклюзивним інтер'єром та повним спектром зручностей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Yacht Club "Black Sea". Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
